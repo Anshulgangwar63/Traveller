@@ -1,6 +1,254 @@
+/* google fonts cdn */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Pacifico|Circular&display=swap');
+
+/* ============================
+        Global style
+===============================*/
+
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+body
+{
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+/* =======================================
+
+        Header Styless
+========================================= */
+
+/* =========Header background style========== */
+header
+{
+    background-image: linear-gradient(to bottom ,rgba(5, 5, 5, 0.61),
+                    rgba(233, 232, 232, 0.493)),url("images/back2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* display: flex; */
+    position: absolute;
+}
+
+
+/* ===========container=============== */
+
+.container
+{
+    margin: 0 1em 0 1em; 
+}
+
+
+/* ======= Nav Bar ===========*/
+
+nav 
+{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;    
+    /* background-color: white; */
+}
+
+nav .nav_bar
+{
+    flex-grow: 1;
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+}
+
+nav .nav_bar li
+{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul.nav_bar li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-bottom: .3em;
+    transition: 1s;
+}
+
+nav ul.nav_bar li::after
+{
+    content: " ";
+    background-color: white;
+    width: 0;
+    height: 5px;
+    display: block;
+    border-radius: 1px;
+    transition: 1s;	
+}
+nav ul.nav_bar li:hover::after
+{
+    width: 60%;
+} 
+
+.logo
+{
+    flex-grow: 2;
+}
+
+.logo p
+{
+    font-size: 1.5em;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.empty
+{
+    flex-grow: 1;
+}
+
+.empty1
+{
+    flex-grow: 1;
+} 
+
+
+/* ============== hero content ===========*/
+
+.hero_section
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+.hero_section .hero-content_1
+{
+    margin-top: 3em;
+    margin-bottom: .2em;
+    line-height: 1.2;
+    font-size: 4.125em;
+}
+
+.hero_section .hero-content_2
+{
+    line-height: 1.2;
+    font-size: 4.125em;
+}
+
+/* ============= Button ===============*/
+
+.hero_section .learn_more
+{
+    text-decoration: none;
+    color: white;
+    margin-top: 4em; 
+    border: 3px solid white;
+    padding: 1em 3em;
+    font-size: 1.2em;
+    border-radius: 40px;
+    transition: 1s;
+    font-weight: bold;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+.hero_section .learn_more:hover
+{
+    background-color:white;
+    color: black;
+}
+
+
+/* =======================================
+    Responsive design
+=========================================== */
+
+@media (max-width:1020px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width:890px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 7em;
+        margin-bottom: .3em;
+    }
+}
+
+@media (max-width:770px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 10em;
+        margin-bottom: .3em;
+    }
+}
+
+@media (max-width:635px)
+{
+    body
+    {
+        font-size: 8px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 15em;
+        margin-bottom: .3em;
+    }
+}
+
+
+@media (max-width:510px)
+{
+    body
+    {
+        font-size: 6px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 20em;
+        margin-bottom: .3em;
+    }
+}
+
+@media (max-width:385px)
+{
+    body
+    {
+        font-size: 5px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 25em;
+        margin-bottom: .3em;
+    }
 }
