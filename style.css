@@ -20,6 +20,13 @@ body
     color: white;
 }
 
+
+
+section
+{
+    padding: 3em;
+}
+
 /* =======================================
 
         Header Styless
@@ -33,9 +40,10 @@ header
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
     /* display: flex; */
-    position: absolute;
+    /* position: absolute; */
 }
 
 
@@ -56,9 +64,21 @@ nav
     align-items: center;
     position: fixed;
     width: 100%;    
+    transition: .5s;
     /* background-color: white; */
 }
 
+.nav-transparent
+{
+    background-color: transparent;
+}
+
+.nav-colored
+{
+    background-color: rgb(206, 205, 205);
+    color: black;
+    padding: .5em 1em .5em 1em;
+}
 nav .nav_bar
 {
     flex-grow: 1;
@@ -73,16 +93,27 @@ nav .nav_bar li
     justify-content: center;
 }
 
-nav ul.nav_bar li a
+
+.nav_link_white
 {
-    text-decoration: none;
     color: white;
     font-weight: bold;
+}
+.nav_link_black
+{
+    color: black;
+    font-weight: 500;
+}
+
+nav ul.nav_bar li a.nav_links
+{
+    text-decoration: none;
+    /* color: white; */
     padding-bottom: .3em;
     transition: 1s;
 }
 
-nav ul.nav_bar li::after
+/* nav ul.nav_bar li::after
 {
     content: " ";
     background-color: white;
@@ -95,7 +126,7 @@ nav ul.nav_bar li::after
 nav ul.nav_bar li:hover::after
 {
     width: 60%;
-} 
+}  */
 
 .logo
 {
@@ -168,6 +199,32 @@ nav ul.nav_bar li:hover::after
 {
     background-color:white;
     color: black;
+}
+
+
+/* ===================================
+        About section
+======================================== */
+
+
+.about
+{
+    color: black;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.about p
+{
+    font-weight: 600;
+}
+
+
+
+.about p span
+{
+    font-size: 1.5em;
+    color: orangered;
 }
 
 
