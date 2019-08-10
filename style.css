@@ -78,7 +78,7 @@ nav
 
 .nav-colored
 {
-    background-color: rgb(206, 205, 205);
+    background-color: rgb(238, 238, 238);
     color: black;
     padding: .5em 1em .5em 1em;
 }
@@ -216,8 +216,6 @@ nav ul.nav_bar li:hover::after
     font-size: 3.5em;
     text-align: center;
     padding-top: 1.5em;
-    /* clip-path: polygon(34% 38%, 100% 0, 100% 100%, 0% 100%);
-    background-color: #2ecc72; */
     z-index: -1000;
 }
 
@@ -250,12 +248,139 @@ nav ul.nav_bar li:hover::after
     font-weight: 600;
 }
 
-
-
 .about p span
 {
     font-size: 1.5em;
     color: #2ecc72;
+}
+
+
+/* =====================================
+        Feature section
+======================================== */
+.grid
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;          
+    list-style: none;
+}
+
+
+.features
+{
+    background-color: rgb(238, 238, 238);
+    color:black;
+    padding-top: 4em;
+    /* align-items: center; */
+}
+
+.features h3.title
+{
+    text-transform: capitalize;
+    font-size:3em;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.features p
+{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.features .grid li
+{
+    padding:50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.features .grid li i
+{
+    color:#2ecc72;
+}
+
+.features .grid li h4
+{
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+
+
+/* =================================
+        Our Team
+==================================== */
+
+
+.team
+{
+    background-color: white;
+    color:black;
+    padding-top: 4em;
+    /* align-items: center; */
+}
+
+.team h3.title
+{
+    text-transform: capitalize;
+    font-size:3em;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.team p
+{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.team .grid li
+{
+    padding:50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+#profile
+{
+    transform: rotate(90deg);
+}
+
+.team .grid li img
+{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+
+.team .grid li h4
+{
+    font-size: 1.7em;
+    margin: 25px 0;
+    color: #2ecc72;
+}
+
+.team .grid li p
+{
+    color: rgb(153, 152, 152);
+}
+
+
+/* =================================
+        Footer
+==================================== */
+
+footer
+{
+    height: 2em;
+    text-align: center;
+    color: black;
+    background-color: silver;
 }
 
 
@@ -298,6 +423,10 @@ nav ul.nav_bar li:hover::after
     {
         margin-top: 10em;
         margin-bottom: .3em;
+    }
+    .features .grid li
+    {
+        flex-basis: 100%;
     }
 }
 
