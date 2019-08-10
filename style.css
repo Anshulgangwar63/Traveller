@@ -24,7 +24,7 @@ body
 
 section
 {
-    padding: 3em;
+    padding: 2.5em;
 }
 
 /* =======================================
@@ -65,6 +65,7 @@ nav
     position: fixed;
     width: 100%;    
     transition: .5s;
+    z-index: 1;
     /* background-color: white; */
 }
 
@@ -213,6 +214,28 @@ nav ul.nav_bar li:hover::after
     font-size: 3.5em;
     text-align: center;
 }
+
+
+.about .globe
+{
+    height: 10em;
+    width: 10em;
+    animation: rotating 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotating
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
 
 .about p
 {
