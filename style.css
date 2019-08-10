@@ -24,7 +24,7 @@ body
 
 section
 {
-    padding: 2.5em;
+    padding: 3em;
 }
 
 /* =======================================
@@ -33,10 +33,12 @@ section
 ========================================= */
 
 /* =========Header background style========== */
+
+/* linear-gradient(to bottom ,rgba(5, 5, 5, 0.61),
+                    rgba(233, 232, 232, 0.493)), */
 header
 {
-    background-image: linear-gradient(to bottom ,rgba(5, 5, 5, 0.61),
-                    rgba(233, 232, 232, 0.493)),url("images/back2.jpg");
+    background-image: url("images/try1.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -182,9 +184,9 @@ nav ul.nav_bar li:hover::after
 .hero_section .learn_more
 {
     text-decoration: none;
-    color: white;
+    color: #2ecc72;
     margin-top: 4em; 
-    border: 3px solid white;
+    border: 3px solid #2ecc72;
     padding: 1em 3em;
     font-size: 1.2em;
     border-radius: 40px;
@@ -198,8 +200,8 @@ nav ul.nav_bar li:hover::after
 
 .hero_section .learn_more:hover
 {
-    background-color:white;
-    color: black;
+    background-color:#2ecc72;
+    color: white;;
 }
 
 
@@ -213,15 +215,21 @@ nav ul.nav_bar li:hover::after
     color: black;
     font-size: 3.5em;
     text-align: center;
+    padding-top: 1.5em;
+    /* clip-path: polygon(34% 38%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #2ecc72; */
+    z-index: -1000;
 }
 
 
 .about .globe
 {
+    /* padding-top: -em; */
     height: 10em;
     width: 10em;
-    animation: rotating 30s linear infinite;
+    animation: rotating 40s linear infinite;
     z-index: -1;
+    margin-bottom: .5em;
 }
 
 @keyframes rotating
@@ -247,7 +255,7 @@ nav ul.nav_bar li:hover::after
 .about p span
 {
     font-size: 1.5em;
-    color: orangered;
+    color: #2ecc72;
 }
 
 
