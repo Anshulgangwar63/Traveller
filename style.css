@@ -222,12 +222,12 @@ nav ul.nav_bar li:hover::after
 
 .about .globe
 {
-    /* padding-top: -em; */
     height: 10em;
     width: 10em;
     animation: rotating 40s linear infinite;
     z-index: -1;
     margin-bottom: .5em;
+    /* box-shadow: 30px 30px 10px grey;    */
 }
 
 @keyframes rotating
