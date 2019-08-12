@@ -1,0 +1,474 @@
+/* google fonts cdn */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Pacifico|Circular&display=swap');
+
+/* ============================
+        Global style
+===============================*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+
+
+section
+{
+    padding: 3em;
+}
+
+/*===============================
+    preloader
+=================================*/
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url('images/preloader.svg');
+    background-repeat: no-repeat; 
+    background-color: #FFF;
+    background-position: center;
+ }
+
+/* =======================================
+
+        Header Styless
+========================================= */
+
+/* =========Header background style========== */
+
+/* linear-gradient(to bottom ,rgba(5, 5, 5, 0.61),
+                    rgba(233, 232, 232, 0.493)), */
+header
+{
+    background-image: url("images/try1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    /* display: flex; */
+    /* position: absolute; */
+}
+
+
+/* ===========container=============== */
+
+.container
+{
+    margin: 0 1em 0 1em; 
+}
+
+
+/* ======= Nav Bar ===========*/
+
+nav 
+{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;    
+    transition: .5s;
+    z-index: 1;
+    /* background-color: white; */
+}
+
+.nav-transparent
+{
+    background-color: transparent;
+}
+
+.nav-colored
+{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: .5em 1em .5em 1em;
+}
+nav .nav_bar
+{
+    flex-grow: 1;
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+}
+
+nav .nav_bar li
+{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.nav_link_white
+{
+    color: white;
+    font-weight: bold;
+}
+.nav_link_black
+{
+    color: black;
+    font-weight: 500;
+}
+
+nav ul.nav_bar li a.nav_links
+{
+    text-decoration: none;
+    /* color: white; */
+    padding-bottom: .3em;
+    transition: 1s;
+}
+
+
+.logo
+{
+    flex-grow: 2;
+}
+
+.logo p
+{
+    font-size: 1.5em;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.empty
+{
+    flex-grow: 1;
+}
+
+.empty1
+{
+    flex-grow: 1;
+} 
+
+
+/* ============== hero content ===========*/
+
+.hero_section
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+.hero_section .hero-content_1
+{
+    margin-top: 3em;
+    margin-bottom: .2em;
+    line-height: 1.2;
+    font-size: 4.125em;
+}
+
+.hero_section .hero-content_2
+{
+    line-height: 1.2;
+    font-size: 4.125em;
+}
+
+/* ============= Button ===============*/
+
+.hero_section .learn_more
+{
+    text-decoration: none;
+    color: #2ecc72;
+    margin-top: 4em; 
+    border: 3px solid #2ecc72;
+    padding: 1em 3em;
+    font-size: 1.2em;
+    border-radius: 40px;
+    transition: 1s;
+    font-weight: bold;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+.hero_section .learn_more:hover
+{
+    background-color:#2ecc72;
+    color: white;;
+}
+
+
+/* ===================================
+        About section
+======================================== */
+
+
+.about
+{
+    color: black;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 1.5em;
+    z-index: -1000;
+}
+
+
+.about .globe
+{
+    height: 10em;
+    width: 10em;
+    animation: rotating 40s linear infinite;
+    z-index: -1;
+    margin-bottom: .5em;
+    /* box-shadow: 30px 30px 10px grey;    */
+}
+
+@keyframes rotating
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+.about p
+{
+    font-weight: 600;
+}
+
+.about p span
+{
+    font-size: 1.5em;
+    color: #2ecc72;
+}
+
+
+/* =====================================
+        Feature section
+======================================== */
+.grid
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;          
+    list-style: none;
+}
+
+
+.features
+{
+    background-color: rgb(238, 238, 238);
+    color:black;
+    padding-top: 4em;
+    /* align-items: center; */
+}
+
+.features h3.title
+{
+    text-transform: capitalize;
+    font-size:3em;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.features p
+{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.features .grid li
+{
+    padding:3em;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.features .grid li i
+{
+    color:#2ecc72;
+}
+
+.features .grid li h4
+{
+    font-size: 1.5em;
+    margin: 25px 0;
+}
+
+
+
+/* =================================
+        Our Team
+==================================== */
+
+
+.team
+{
+    background-color: white;
+    color:black;
+    padding-top: 4em;
+    /* align-items: center; */
+}
+
+.team h3.title
+{
+    text-transform: capitalize;
+    font-size:3em;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.team p
+{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.team .grid li
+{
+    padding:2.5em;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+#profile
+{
+    transform: rotate(90deg);
+}
+
+.team .grid li img
+{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+
+.team .grid li h4
+{
+    font-size: 1.7em;
+    margin: 25px 0;
+    color: #2ecc72;
+}
+
+.team .grid li p
+{
+    color: rgb(153, 152, 152);
+}
+
+
+/* =================================
+        Footer
+==================================== */
+
+footer
+{
+    height: 2em;
+    text-align: center;
+    color: black;
+    background-color: silver;
+}
+
+
+/* =======================================
+    Responsive design
+=========================================== */
+
+@media (max-width:1020px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width:890px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 7em;
+        margin-bottom: .3em;
+    }
+}
+
+@media (max-width:770px)
+{
+    body
+    {
+        font-size: 10px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 10em;
+        margin-bottom: .3em;
+    }
+    .features .grid li
+    {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:635px)
+{
+    body
+    {
+        font-size: 8px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 15em;
+        margin-bottom: .3em;
+    }
+}
+
+
+@media (max-width:510px)
+{
+    body
+    {
+        font-size: 6px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 20em;
+        margin-bottom: .3em;
+    }
+}
+
+@media (max-width:385px)
+{
+    body
+    {
+        font-size: 5px;
+    }
+    .hero_section .hero-content_1
+    {
+        margin-top: 25em;
+        margin-bottom: .3em;
+    }
+}

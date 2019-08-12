@@ -1,0 +1,23 @@
+{
+  "name": "traveller",
+  "version": "1.0.0",
+  "description": "A travelling website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshulgangwar63/Traveller.git"
+  },
+  "author": "Anshul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anshulgangwar63/Traveller/issues"
+  },
+  "homepage": "https://github.com/Anshulgangwar63/Traveller#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
