@@ -51,8 +51,7 @@ section
 
 /* =========Header background style========== */
 
-/* linear-gradient(to bottom ,rgba(5, 5, 5, 0.61),
-                    rgba(233, 232, 232, 0.493)), */
+
 header
 {
     background-image: url("images/try1.jpg");
@@ -61,8 +60,6 @@ header
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    /* display: flex; */
-    /* position: absolute; */
 }
 
 
