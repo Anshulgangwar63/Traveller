@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/48/000000/fighter-jet.png" type="image/x-icon">
+
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/navbar.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Traveller</title>
+</head>
+<body>
+    <div class="preloader"></div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Traveller</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/dashboard">Plan Holiday</a></li>
+            <li><a href="#">My Destinations</a></li>
+            <li><a href="#">My Photos</a></li>
+            <li><a href="#"><%= currentUser.username %></a></li>
+            <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>

@@ -4,8 +4,9 @@
   "description": "A travelling website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "app.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,24 @@
   },
   "homepage": "https://github.com/Anshulgangwar63/Traveller#readme",
   "dependencies": {
-    "ejs": "^2.6.2",
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.7.7",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^3.3.0",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "ejs-lint": "^0.3.0"
   }
 }

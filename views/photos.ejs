@@ -1,0 +1,34 @@
+<% include partials/navbar %>
+
+<div class="photo_back">
+    <h1 class="photo-header">Upload Photos</h1>
+    <div class="form-style">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <button type="submit">UPLOAD</button>
+        </form>
+    </div>
+</div>
+
+
+    <% if(files){ %>
+    <div class="box">
+        <div class="ui three column grid" style="margin-top:20px;margin-left:10px;">
+            <div class="row">
+                <div class="ui link cards">
+                    <% files.forEach(function(file) { %>
+                    <div class="card">
+                        <% if(file.isImage) { %>
+                        <div class="image">
+                                <img src="image/<%= file.filename %>" alt="">
+                        </div>
+                        <% } %>
+                    </div>
+                    <% }) %>
+                    <% } else { %>
+                        <p>No files to show</p>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+    </div>

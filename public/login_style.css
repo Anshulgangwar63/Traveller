@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Prompt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Prompt', sans-serif;
+}
+
+header
+{
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+
+.wrap
+{
+    height: 100vh;
+    background-image:linear-gradient(to top right,rgba(0,0,0,0.5),rgba(245, 205, 121,1.0)),url(images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.login-modal
+{
+    margin: 0;
+    z-index: 1;
+    height: 500px;
+    width: 900px;
+    border-radius: 20px;
+    background-image: url(images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.login-form
+{
+    background-color: white;
+    width: 100%;
+    height: inherit;
+    opacity: .8;
+    border-radius: 20px;
+   clip-path: polygon(0 0, 50% 0%, 70% 100%, 0 100%);
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.login-form .login-header
+{
+    font-size: 70px;
+    font-family: 'Alfa Slab One', cursive;
+    background-size: cover;
+    background-image: url(images/login.jpg);
+    background-position: center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.form
+{
+    padding-top: 30px;
+}
+.attr
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+input[type=text],
+input[type=password]
+{
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 3px solid grey;
+    margin-bottom: 20px;
+    display: block;
+    outline: none;
+}
+
+.submit-button
+{
+    margin-top: 20px; 
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 1;
+    border: 3px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.notuser
+{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.notuser a
+{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

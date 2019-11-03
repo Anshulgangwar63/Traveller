@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Alfa+Slab+One|Roboto+Slab|Pacifico|Circular&display=swap');
+
+
+.nav-wrapper
+{
+    background-color: #00b894;
+    padding-left: 10px;
+}
+
+.nav-wrapper a.brand-logo
+{
+    text-decoration: none;
+    color:white;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+#nav-mobile a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+
+.form-style
+{
+    width: 500px;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-style button
+{
+    background: transparent;
+    border: none;
+    background-color:#00b894 !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-style input
+{
+    border: 3px solid #00b894;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.photo-header
+{
+    font-size: 60px;
+    font-family: 'Alfa Slab One', cursive;
+    background-size: cover;
+    background-image: url(images/try1.jpg);
+    background-position: center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box
+{
+    padding: 10px;
+}
+
+
+.photo_back
+{
+    background-image: linear-gradient(to bottom right,rgba(252, 249, 249, 0.726),rgba(40, 250, 152, 0.514)),url(images/login.jpg);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Roboto+Slab|Pacifico|&display=swap');
+
+.section
+{
+    height: 100vh;
+    margin-top: -16px;
+    position: relative;
+}
+.nav-wrapper
+{
+    background-color: #00b894;
+    padding-left: 10px;
+    z-index: 1;
+    
+}
+
+.nav-wrapper a.brand-logo
+{
+    text-decoration: none;
+    color:white;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+#nav-mobile a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+
+.modal1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1;
+    height: 300px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+.modal1 h4
+{
+    font-family: 'Cookie', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+input[type=text]
+{
+    border-radius:20px !important;  
+    border: 2px solid #00b894 !important;
+    padding-left: 10px !important;
+    color: white !important;
+    width: 80% !important;
+}
+
+button
+{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px !important  ;
+    border: #00b894;
+    background-color: #00b894;
+    cursor: pointer;
+    margin-top: 20px !important;
+    color: white;
+}
+
+.video-container1
+{
+    position: fixed;
+    min-width: 100%; 
+    min-height: 100%;
+    overflow: hidden;
+}

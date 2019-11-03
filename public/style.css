@@ -346,10 +346,10 @@ nav ul.nav_bar li a.nav_links
     text-align: center;
 }
 
-#profile
+/* #profile
 {
     transform: rotate(90deg);
-}
+} */
 
 .team .grid li img
 {
