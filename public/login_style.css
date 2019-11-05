@@ -102,6 +102,7 @@ input[type=password]
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
 }
 
 

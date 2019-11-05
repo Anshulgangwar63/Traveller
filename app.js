@@ -16,7 +16,6 @@ const User                = require("./models/user");
 const authRoutes = require('./routes/authentication');
 const photosRoutes = require('./routes/photos');
 const dashboardRoutes = require('./routes/dashboard');
-const places = require('./routes/places');
 
 
 // global promise
@@ -75,15 +74,6 @@ app.use(photosRoutes);
 app.use(dashboardRoutes);
 
 
-app.get('/places',(req,res)=>{
-    places.callApi(function(response){
-      // console.log(JSON.stringify(response));
-      var data = JSON.stringify(response);
-      console.log(data);
-      // res.write(JSON.stringify(response));
-      res.end();
-  })
-});
 
 
 app.listen(process.env.PORT || 3000,function() {

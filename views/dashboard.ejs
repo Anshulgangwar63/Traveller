@@ -27,8 +27,8 @@
     </nav>
     <div class="modal1">
         <h4>Search For Your Favourite Place!!</h4>
-        <form action="">
-            <input id="auto_places" type="text" class="search" placeholder="Destination">
+        <form action="/place" method="POST">
+            <input id="auto_places" type="text" name="place" class="search" placeholder="Destination">
             <button type="submit">Search</button>
         </form>
     </div>
@@ -38,7 +38,7 @@
         </video>
     </div>
 </div>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU4nA8iRi8kcydsY9WMS_PmkMndtkSM-8&libraries=places"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPs_dngIi8gbvWQ8e6QxAobhcY-PHqMFw&libraries=places"></script>
 <script>
     var input = document.getElementById('auto_places');
 
