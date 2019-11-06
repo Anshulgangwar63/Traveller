@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Alfa+Slab+One|Roboto+Slab|Pacifico|Circular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Jomolhari|Staatliches&display=swap');
 
+
+body
+{
+    background: #c2c2c2 !important;
+}
+
 .nav-wrapper
 {
-    background: rgb(12,22,17);
-background: linear-gradient(to bottom right, rgba(12,22,17,1) 0%, rgba(14,224,144,1) 100%);
+    background-image: linear-gradient(to right bottom, #2af598 0%, #009efd 100%);
     padding-left: 10px;
 }
 
@@ -101,107 +106,85 @@ background: linear-gradient(to bottom right, rgba(12,22,17,1) 0%, rgba(14,224,14
 
 .flight_box
 {
-    height: 300px;
-    width: 800px;
-    border-radius: 5px;
+    display: flex;
+    height: 150px;
+    width:900px;
     margin: 0 auto;
-    border: 3px solid rgb(209, 209, 209);
-    /* display: flex; */
-    align-content: center;
-    margin-top: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-    
-}
-
-.flight_box:hover
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.airline
-{
-    /* display: flex; */
-    text-align: center;
-    /* align-content: center;
-    align-items: center;
-    justify-content: center; */
+    margin-top: 20px;
     margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
 }
 
-.airline img.logo
-{
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-}
-.airline p.name
-{
-    font-size: 40px;
-    display: inline;
-    font-family: 'Jomolhari', serif;
-}
 
-.details
+.small_box
 {
     display: flex;
-}
-.source
-{
     flex-grow: 1;
-    /* background: red; */
-    align-items: center;
-    text-align: center;
-    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    align-items: center
 }
 
-.source .source_name,
-.destination .destination_name
+.small_box .logo img
 {
-    font-size: 30px;
+    height: 60px;
+    width: 60px;
 }
 
-.source .source_time,
-.destination .destination_time
-{
-    font-size: 25px;
-    display: block;
-    color: grey;
-}
-
-.arrow
-{
-    margin-top: 13px;
-}
-
-.destination
-{
-    flex-grow: 1;
-    align-items: center;
-    text-align: center;
-    /* background: chartreuse; */
-    font-family: 'Staatliches', cursive;
-}
-
-
-.flight_class
-{
-    margin-top: 35px;
-    display: flex;
-}
-
-.class_info
-{
-    flex-grow: 1;
-    text-align: center;
-}
-
-.class_name
-{
-    font-family: 'Staatliches', cursive;
-    font-size: 20px;
-}
-.class_info .price
+.small_box .airline
 {
     font-weight: 700;
+    margin-left: 20px;
+    font-size: 20px;
 }
+
+
+.stop p
+{
+    text-align: center;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+
+.stop p span
+{
+    color: black;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.stop i
+{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.price
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.submit_btn
+{
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+
+.small_box form input[type=text]
+{
+    display: none;
+}
+
+
+

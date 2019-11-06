@@ -1,0 +1,120 @@
+/* hotels styles */
+.row
+{
+    display: flex !important;
+    width: 100% !important;
+    padding: 50px !important;
+    margin: 0 auto !important;
+    justify-content: center;
+}
+
+
+
+.hotel_card
+{
+    height: 500px !important ;
+    width: 300px !important ;
+    background: white !important ;
+    border-radius: 20px !important ;
+    margin-bottom: 40px !important ;
+    margin-right: 30px !important ;
+}
+
+.cont
+{
+    padding: 3px 10px !important ;
+}
+
+.hotel_detail
+{
+/*    background: red !important;*/
+    justify-content: center !important;
+/*    align-items: center !important;*/
+    display: flex !important;
+    /* margin-bottom: 6px !important; */
+}
+
+.hotel_card .pic img
+{
+    height: 200px !important;
+    width: 100% !important;
+}
+
+.hotel_name
+{
+    font-size: 25px !important;
+    flex-grow: 1 !important;
+    font-weight: bold !important;
+    margin-left: 10px !important;
+}
+
+.hotel_name span
+{
+    font-size: 15px !important;
+    color: #c2c2c2 !important;
+    display: block !important;
+    margin-bottom: -9px;;
+}
+
+.star
+{
+    font-size: 20px !important;
+    margin-right: 30px !important;
+    margin-top: 5px !important;
+    font-weight: bold !important;
+}
+
+.star i
+{
+    color: gold !important;
+}
+
+.hotel_form
+{
+    margin-bottom: -25px;
+    padding-left: 5px !important;
+}
+
+.hotel_form label
+{
+    display: block !important;
+    font-weight: 900 !important;   
+    margin-bottom: 5px !important;
+}
+
+.hotel_form input[type="date"]
+{
+    border-radius: 10px !important ;
+    border: none !important ;
+    border: 1px solid #c2c2c2 !important ;
+    padding: 3px 5px !important ;
+    margin-bottom: 8px !important ;
+    width: 200px !important ;
+    outline: none !important ;
+}
+
+.sub_wid
+{
+    width: 100% !important;
+}
+
+.submit_btn1
+{
+    display: block !important;
+    padding: 10px 50px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    color: black !important;
+    cursor: pointer !important;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%) !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+
+.hotel_form input[type="text"]
+{
+    display: none !important;
+}

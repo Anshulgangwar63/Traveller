@@ -1,8 +1,38 @@
+<% include partials/navbar %>
+<div class="flight_back">
+    <h1 class="flight_header">Hotels</h1>
+</div>
 
-
-<form action="/exp" method="POST">
-    <textarea rows="4" cols="50" name="exp">
-        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-    </textarea>
-    <input type="submit">
-</form>
+<div class="row">
+    <% hotel.forEach(function(hotel){ %> 
+    <div class="hotel_card">
+        <div class="pic">
+            <img src="<%= hotel.hotel_icon %>" alt="img">
+        </div>
+        <div class="cont">
+            <div class="hotel_detail">
+                <p class="hotel_name"><%= hotel.hotel %> <span class="city"><%= hotel.city %></span></p>
+                <div class="star">
+                    <p><%= hotel.star%><i class="fa fa-star" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <div class="hotel_form">
+                <form action="/hotel" method="POST">
+                    <input type="text" value="<%= hotel.hotel%>" name="hotel">
+                    <label for="checkin">Check In</label>
+                    <input type="date"  name="checkIn">
+                    <label for="chekout">Check Out</label>
+                    <input type="date"  name="checkOut">
+                    <input type="text" value="<%= hotel.city%>" name="city">
+                    <input type="text" value="<%= hotel.address%>" name="hotel_add">
+                    <input type="text" value="<%= hotel.star%>" name="star">
+                    <input type="text" name="hotel_icon" value="<%= hotel.icon %>">
+                    <div class="sub_wid">
+                        <input type="submit" value="Book" class="submit_btn1">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%})%>
+</div>

@@ -2,7 +2,7 @@ const express = require('express');
 const route = express.Router();
 const User = require('../models/user');
 const flash = require("connect-flash");
-const passport            = require("passport");
+const passport = require("passport");
 
 // Home page
 route.get("/",function(req,res){
