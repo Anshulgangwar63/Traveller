@@ -120,7 +120,15 @@ route.post("/hotel",isLoggedIn,(req,res)=>{
 
 
 
-
+route.get("/plans",isLoggedIn,(req,res)=>{
+    travelPlan.find({user:req.user.id},(err,plan)=>{
+        if(err)
+            console.log(err);
+        else
+        res.render("plans",{plan:plan});
+    })
+    
+});
 
 
 

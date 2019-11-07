@@ -20,9 +20,9 @@
                 <form action="/hotel" method="POST">
                     <input type="text" value="<%= hotel.hotel%>" name="hotel">
                     <label for="checkin">Check In</label>
-                    <input type="date"  name="checkIn">
+                    <input type="date"  name="checkIn"  required>
                     <label for="chekout">Check Out</label>
-                    <input type="date"  name="checkOut">
+                    <input type="date"  name="checkOut" required>
                     <input type="text" value="<%= hotel.city%>" name="city">
                     <input type="text" value="<%= hotel.address%>" name="hotel_add">
                     <input type="text" value="<%= hotel.star%>" name="star">
