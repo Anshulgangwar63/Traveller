@@ -1,0 +1,238 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #eee;
+}
+
+.timeline
+{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.upper_part
+{
+    display: flex;
+    
+}
+.text_card
+{
+/*    background: red;*/
+    height: 250px;
+    flex-grow: 2;
+    background: white;
+    width: 250px;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+}
+.card_top
+{
+    display: flex;
+    padding-left: 34px;
+    padding-top: 40px;
+}
+.plane
+{
+    width: 40px;
+    height: 40px;
+}
+.airline_name
+{
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.date_box
+{
+    text-align: right;
+    font-size: 20px;
+    width: 120px;
+    float: right;
+/*    margin-top: -10px;*/
+    color:white;
+    background: #FF4081;
+    padding: 10px;
+}
+
+.toboard
+{
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.source_2
+{
+    flex-grow: 2;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.arrow_2
+{
+    flex-grow: 1;
+}
+.dest_2
+{
+/*    background: red;*/
+    flex-grow: 2;
+    font-size: 25px;
+    justify-content: center;
+    text-align: left;
+    font-weight: bold;
+}
+
+.time_trav
+{
+    font-size: 20px;
+    color: #c2c2c2;
+}
+
+
+
+.hori
+{
+/*    background: green;*/
+/*    flex-grow: 1;*/
+    border-left: 6px solid green;
+/*      height: 500px;*/
+/*      position: absolute;*/
+/*      left: 50%;*/
+      margin-left: 30px;
+/*      top: 0;*/
+}
+.blank
+{
+/*    background: blue;*/
+    flex-grow: 4;
+    color: #eee;
+}
+
+.below_part
+{
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.second_line
+{
+/*    margin-right: 80px;*/
+}
+
+.blank_space
+{
+    flex-grow: 4;
+/*    background: red;*/
+}
+
+.photo_card
+{
+    flex-grow: 2;
+    background: white;
+    height: 410px;
+    width: 250px;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;;
+}
+
+.picture_space
+{
+    height:150px;
+    /* background-image: url(https://cache.marriott.com/marriottassets/marriott/DELAL/delal-exterior-5927-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*); */
+    background-position: center;
+    background-size: cover;
+}
+
+.second_date_box
+{
+    color: white;
+    background: #FF4081;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.hotel_info
+{
+    display: flex;
+    padding: 10px;
+}
+
+.hot_name
+{
+    flex-grow: 1;
+    font-size: 25px;
+    font-weight: bold;
+}
+.hotel_city
+{
+    color: #c2c2c2;
+    font-size: 20px;
+}
+
+.hotel_star
+{
+    flex-grow: 1;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hotel_star i
+{
+    color: gold;
+}
+
+.datess
+{
+    display: flex;
+    padding: 10px;
+}
+
+.checki
+{
+/*    text-align: center;*/
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+.act
+{
+    color: #c2c2c2;
+}
+
+.checko
+{
+    flex-grow: 1;
+/*    text-align: center;*/
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.hot_add
+{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hot_add p
+{
+    font-size: 15px;
+    color: #c2c2c2;
+    font-weight: bold;
+}

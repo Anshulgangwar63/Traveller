@@ -1,19 +1,26 @@
 <% include partials/navbar %>
 
+<div class="flight_back">
+        <h1 class="flight_header">My Plans</h1>
+</div>
+
+<% plan.forEach(function(plan){ %>
+
 <div class="ticket">
     <div class="side_1">
        <div class="side_1_1">
            <div class="date_plan">
-             <p class="day">31</p>
-             <p class="month">OCT</br>19</p>
+             <p class="day"><%= plan.book_date[8]%><%= plan.book_date[9]%></p>
+             <p class="month">NOV</br>19</p>
              </div>
-             <div class="airline_name"><i class="fa fa-plane" aria-hidden="true"></i>Air India</div>
+             <div class="airline_name"><i class="fa fa-plane" aria-hidden="true"></i><%= plan.airline %></div>
        </div>
        <div class="destination">
-           <p>Delhi India</p>
+           <p><%= plan.destination%>,India</p>
        </div>
     </div>
     <div class="side_2">
-        <a href="#" class="submit">Full Plan</a>
+        <a href="/plan/<%= plan.id %>" class="submit">Full Plan</a>
     </div>
  </div>
+ <%}) %>

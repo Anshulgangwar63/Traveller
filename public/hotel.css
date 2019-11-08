@@ -140,7 +140,7 @@
   display: flex;
   margin: 10% auto auto auto;
   color: #fff;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/08/15/Pictures/constituency-story_af93c358-bf78-11e9-8082-f72c40cec428.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/08/15/Pictures/constituency-story_af93c358-bf78-11e9-8082-f72c40cec428.jpg);
 }
 
 .side_1
@@ -215,7 +215,7 @@ a.submit
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 10px 40px;
     background-image: linear-gradient(to right, rgb(79, 172, 254) 0%, rgb(0, 242, 254) 100%) 
 }
 
@@ -224,3 +224,5 @@ a.submit:hover
     color: white !important;
     text-decoration: none !important;
 }
+
+

@@ -18,7 +18,7 @@
             <a href="#" class="brand-logo">Traveller</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/dashboard">Plan Holiday</a></li>
-            <li><a href="#">My Plans</a></li>
+            <li><a href="/plans">My Plans</a></li>
             <li><a href="/photos">My Photos</a></li>
             <li><a href="#"><%= currentUser.username %></a></li>
             <li><a href="/logout">Logout</a></li>
@@ -28,15 +28,15 @@
     <div class="modal1">
         <h4>Search For Your Favourite Place!!</h4>
         <form action="/place" method="POST">
-            <input id="auto_places" type="text" name="place" class="search" placeholder="Destination">
+            <input id="auto_places" type="text" name="source" class="search" placeholder="Source" required>
+            <input id="auto_places" type="text" name="destination" class="search" placeholder="Destination" required>
+            <label for="Booking Date">Booking Date</label>
+            <div class="date">
+                <input type="date" name="book_date" required>
+            </div>
             <button type="submit">Search</button>
         </form>
     </div>
-    <!-- <div class="video-container1">
-        <video autoplay loop muted>
-            <source src="/video/back.mp4" type="video/mp4">    
-        </video>
-    </div> -->
 </div>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPs_dngIi8gbvWQ8e6QxAobhcY-PHqMFw&libraries=places"></script>
 <script>

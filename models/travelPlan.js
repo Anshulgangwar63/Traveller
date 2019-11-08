@@ -19,6 +19,9 @@ var memorySchema  = new mongoose.Schema({
     dest_time:{
         type:String
     },
+    book_date:{
+        type:String
+    },
     flight_icon:{
         type:String
     },

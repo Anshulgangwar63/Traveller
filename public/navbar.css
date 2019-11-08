@@ -9,7 +9,7 @@ body
 
 .nav-wrapper
 {
-    background-image: linear-gradient(to right bottom, #2af598 0%, #009efd 100%);
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%) !important;
     padding-left: 10px;
 }
 
