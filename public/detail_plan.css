@@ -25,7 +25,6 @@ body
 }
 .text_card
 {
-/*    background: red;*/
     height: 250px;
     flex-grow: 2;
     background: white;
@@ -57,7 +56,6 @@ body
     font-size: 20px;
     width: 120px;
     float: right;
-/*    margin-top: -10px;*/
     color:white;
     background: #FF4081;
     padding: 10px;
@@ -114,7 +112,6 @@ body
 }
 .blank
 {
-/*    background: blue;*/
     flex-grow: 4;
     color: #eee;
 }
