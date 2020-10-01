@@ -27,7 +27,6 @@
 
 .hotel_detail
 {
-/*    background: red !important;*/
     justify-content: center !important;
 /*    align-items: center !important;*/
     display: flex !important;
@@ -146,7 +145,6 @@
 .side_1
 {
     flex-grow: 2;
-/*    background: red;*/
     border-right: 10px dotted white;
 }
 
