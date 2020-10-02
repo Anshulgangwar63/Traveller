@@ -28,9 +28,7 @@
 .hotel_detail
 {
     justify-content: center !important;
-/*    align-items: center !important;*/
     display: flex !important;
-    /* margin-bottom: 6px !important; */
 }
 
 .hotel_card .pic img
