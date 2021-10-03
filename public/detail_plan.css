@@ -131,7 +131,6 @@ body
 .blank_space
 {
     flex-grow: 4;
-/*    background: red;*/
 }
 
 .photo_card
@@ -147,7 +146,6 @@ body
 .picture_space
 {
     height:150px;
-    /* background-image: url(https://cache.marriott.com/marriottassets/marriott/DELAL/delal-exterior-5927-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*); */
     background-position: center;
     background-size: cover;
 }
@@ -201,7 +199,6 @@ body
 
 .checki
 {
-/*    text-align: center;*/
     flex-grow: 1;
     font-size: 20px;
     font-weight: bold;
