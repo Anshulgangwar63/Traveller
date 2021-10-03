@@ -225,7 +225,6 @@ nav ul.nav_bar li a.nav_links
     animation: rotating 40s linear infinite;
     z-index: -1;
     margin-bottom: .5em;
-    /* box-shadow: 30px 30px 10px grey;    */
 }
 
 @keyframes rotating
@@ -271,7 +270,6 @@ nav ul.nav_bar li a.nav_links
     background-color: rgb(238, 238, 238);
     color:black;
     padding-top: 4em;
-    /* align-items: center; */
 }
 
 .features h3.title
